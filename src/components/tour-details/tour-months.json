@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_tour_details_tour_months",
+  "info": {
+    "displayName": "tourMonths",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "month": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "dates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tour-details.tour-dates",
+      "required": true
+    }
+  }
+}

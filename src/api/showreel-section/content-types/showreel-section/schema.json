@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "showreel_sections",
+  "info": {
+    "singularName": "showreel-section",
+    "pluralName": "showreel-sections",
+    "displayName": "Showreel Section",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Digital Live Concert Media",
+      "minLength": 5,
+      "maxLength": 40
+    },
+    "descriptionLine1": {
+      "type": "text",
+      "required": true,
+      "default": "The format is simple. We utilise the tour’s side video screens to play cool commercials to the audience during the down time."
+    },
+    "descriptionLine2": {
+      "type": "text",
+      "default": "All content is of high cinematic quality and carefully curated to speak true to the fan base.",
+      "required": false
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "bgColor": {
+      "type": "string",
+      "required": true,
+      "default": "#1d1c22"
+    }
+  }
+}

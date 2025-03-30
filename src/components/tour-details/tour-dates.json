@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_tour_details_tour_dates",
+  "info": {
+    "displayName": "tourDates",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "venue": {
+      "type": "string",
+      "required": true
+    },
+    "soldOut": {
+      "type": "boolean"
+    }
+  }
+}

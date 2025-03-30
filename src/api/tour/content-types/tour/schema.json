@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tours",
+  "info": {
+    "singularName": "tour",
+    "pluralName": "tours",
+    "displayName": "Tours",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "hero_slide": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hero-slide.hero-slide",
+      "inversedBy": "tour"
+    },
+    "landingMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "countdown": {
+      "type": "datetime",
+      "required": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "monthsAndDates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tour-details.tour-months",
+      "required": false
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "adDescription": {
+      "type": "blocks"
+    }
+  }
+}

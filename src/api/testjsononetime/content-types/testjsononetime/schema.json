@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "testjsononetimes",
+  "info": {
+    "singularName": "testjsononetime",
+    "pluralName": "testjsononetimes",
+    "displayName": "testjsononetime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "richtextjsontest": {
+      "type": "blocks"
+    }
+  }
+}
